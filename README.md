@@ -6,7 +6,7 @@ b. nalezy utworzyc folder, ktory bedzie wspodzielony, nadac odpowiednie uprawnie
 sudo mkdir /var/docker-nfs && sudo chown nobody:nogroup /var/docker-nfs && sudo chmod 777 /var/docker-nfs </br>
 c. nalezy w pliku /etc/exports dodac linijke </br>
 /var/docker-nfs 127.0.0.1(rw,sync,no_subtree_check) </br>\
-d. wywolac polecenie: sudo exportfs -a && sudo systemctl restart nfs-kernel-server </br>
+d. wywolac polecenie: sudo exportfs -a && sudo systemctl restart nfs-kernel-server
 # 4
 stworzyc wolumen i uruchomic kontener nastepujacym poleceniem: </br>
 docker run -it \ </br>
